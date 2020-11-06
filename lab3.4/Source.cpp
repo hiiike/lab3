@@ -17,8 +17,7 @@ int main()
     cout << "y = "; cin >> y;
 
     // розгалуження в повній формі
-
-    if (y <= sqrt(R * R - (x + R) * (x + R)) || y <= -sqrt(R * R - (x - R) * (x - R)))
+    if (y <= (sqrt(pow(R, 2) - (x + R) * (x + R))) || y <= (-sqrt(pow(R, 2) - (x - R) * (x - R))))
         cout << "yes" << endl;
     else
         cout << "no" << endl;
